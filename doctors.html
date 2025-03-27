@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+.container { position: relative; }
+.image { display: block; width: 300px; height: 400px; }
+.overlay { 
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */ 
+    color: #f1f1f1; 
+    width: 100%; 
+    transition: .5s ease; 
+    opacity:0; 
+    color: white; 
+    font-size: 20px; 
+    padding: 20px; 
+    text-align: center; 
+}
+.container:hover .overlay { opacity: 1; width: 300px; }
+.container { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+.one { border: 1px solid silver; margin: 5px; padding: 5px; width: 320px; }
+.doc { background-color: silver; font-size: 50px; text-align: center; }
+.overlay p { margin: 5px 0; }
+.button-class { text-decoration: none; color: white; background-color: black; padding: 10px 20px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<a href="hospital.html" > <img src="https://static.thenounproject.com/png/967103-200.png" height="30px" width="30px"> </a>
+<h2 class="doc"> Doctors </h2>
+<div class="container">
+    <div class="one">
+        <img src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg" alt="Avatar" class="image">
+        <p class="para">5 Years Experience in <b>Cardiologist</b><br> Specializes in heart and blood vessel diseases</p>
+        <div class="overlay">
+            <p>Dr. M.R. Meena<br>Cardiologist</p>
+            <p>Education: MBBS, MD (Cardiology)</p>
+            <p>Awards: Best Cardiologist 2024</p>
+            <p>Contact: dr.meena@example.com</p>
+        </div>
+    </div>
+    <div class="one">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/329437719/HF/KC/YQ/2507968/dr-badges-500x500.jpg" alt="Avatar" class="image">
+        <p class="para">5 Years Experience in <b>Gynecologist</b> <br> Specializes in female reproductive health</p>
+        <div class="overlay">
+            <p>Dr. S.G Priya<br>Gynecologist</p>
+            <p>Education: MBBS, MS (Gynecology)</p>
+            <p>Awards: Excellence in Gynecology 2023</p>
+            <p>Contact: dr.priya@example.com</p>
+        </div>
+    </div>
+    <div class="one">
+        <img src="https://media.istockphoto.com/id/522051843/photo/you-can-trust-him-with-your-healthcare.jpg?s=612x612&w=0&k=20&c=AvdnBwT8kC6XmN0M_tG5TcrwfdYYIgUSVh5pNFde7X8=" alt="Avatar" class="image">
+        <p class="para">5 Years Experience in <b>Psychiatrist</b> <br>Specializes in mental health, including substance use disorders</p>
+        <div class="overlay">
+            <p>Dr. L. John<br>Psychiatrist</p>
+            <p>Education: MBBS, MD (Psychiatry)</p>
+            <p>Awards: Outstanding Psychiatrist 2023</p>
+            <p>Contact: dr.john@example.com</p>
+        </div>
+    </div>
+    <div class="one">
+        <img src="https://img.freepik.com/free-photo/handsome-young-male-doctor-with-stethoscope-standing-against-blue-background_662251-343.jpg?semt=ais_hybrid" alt="Avatar" class="image">
+        <p class="para">5 Years Experience in <b>Neurologist</b> <br> Specializes in disorders of the brain and nervous system</p>
+        <div class="overlay">
+            <p>Dr. K. Bala<br>Neurologist</p>
+            <p>Education: MBBS, DM (Neurology)</p>
+            <p>Awards: Neurologist of the Year 2024</p>
+            <p>Contact: dr.bala@example.com</p>
+        </div>
+    </div>
+    <div class="one">
+        <img src="https://i.pinimg.com/736x/f4/c9/ef/f4c9ef33d04a22050038e9e53eeb7d85.jpg" alt="Avatar" class="image">
+        <p class="para">3 Years Experience in <b>Allergist</b> <br>Specializes in preventing and treating allergic diseases and conditions</p>
+        <div class="overlay">
+            <p>Dr. R. Raja<br> Allergist</p>
+            <p>Education: MBBS, MD (Allergy and Immunology)</p>
+            <p>Awards: Top Allergist 2023</p>
+            <p>Contact: dr.raja@example.com</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
